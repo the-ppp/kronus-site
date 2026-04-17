@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kronus — Discipline Your Time</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500&family=DM+Sans:wght@300;400&display=swap" rel="stylesheet">
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  :root {
+    --black: #080808;
+    --surface: #111111;
+    --border: rgba(255,255,255,0.08);
+    --silver: #c8c8c8;
+    --white: #f0f0f0;
+    --muted: rgba(255,255,255,0.38);
+  }
+
+  html { scroll-behavior: smooth; }
+
+  body {
+    background: var(--black);
+    color: var(--white);
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 300;
+    min-height: 100vh;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  /* NAV */
+  nav {
+    position: fixed; top: 0; left: 0; right: 0; z-index: 100;
+    display: flex; align-items: center; justify-content: space-between;
+    padding: 1.5rem 3rem;
+    border-bottom: 1px solid var(--border);
+    background: rgba(8,8,8,0.85);
+    backdrop-filter: blur(12px);
+  }
+
+  .nav-logo {
+    display: flex; align-items: center; gap: 0.75rem;
+    text-decoration: none; color: var(--white);
+  }
+
+  .nav-logo img {
+    width: 28px; height: 28px; border-radius: 6px;
+  }
+
+  .nav-logo span {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.3rem; font-weight: 400;
+    letter-spacing: 0.08em;
+  }
+
+  .nav-links { display: flex; gap: 2rem; list-style: none; }
+  .nav-links a {
+    text-decoration: none; color: var(--muted);
+    font-size: 0.8rem; letter-spacing: 0.1em; text-transform: uppercase;
+    transition: color 0.2s;
+  }
+  .nav-links a:hover { color: var(--white); }
+
+  /* HERO */
+  .hero {
+    min-height: 100vh;
+    display: flex; flex-direction: column;
+    align-items: center; justify-content: center;
+    text-align: center;
+    padding: 8rem 2rem 4rem;
+    position: relative; overflow: hidden;
+  }
+
+  .hero::before {
+    content: '';
+    position: absolute; top: 50%; left: 50%;
+    transform: translate(-50%, -50%);
+    width: 520px; height: 520px;
+    border-radius: 50%;
+    border: 1px solid rgba(255,255,255,0.04);
+    pointer-events: none;
+  }
+
+  .hero::after {
+    content: '';
+    position: absolute; top: 50%; left: 50%;
+    transform: translate(-50%, -50%);
+    width: 760px; height: 760px;
+    border-radius: 50%;
+    border: 1px solid rgba(255,255,255,0.025);
+    pointer-events: none;
+  }
+
+  .hero-logo {
+    width: 88px; height: 88px;
+    border-radius: 22px;
+    margin-bottom: 2.5rem;
+    opacity: 0;
+    animation: fadeUp 0.9s ease forwards 0.2s;
+  }
+
+  .hero-title {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: clamp(3.5rem, 8vw, 6.5rem);
+    font-weight: 300;
+    letter-spacing: 0.12em;
+    line-height: 1;
+    color: var(--white);
+    opacity: 0;
+    animation: fadeUp 0.9s ease forwards 0.4s;
+  }
+
+  .hero-tagline {
+    margin-top: 1.25rem;
+    font-size: 0.8rem;
+    letter-spacing: 0.25em;
+    text-transform: uppercase;
+    color: var(--muted);
+    opacity: 0;
+    animation: fadeUp 0.9s ease forwards 0.55s;
+  }
+
+  .hero-desc {
+    max-width: 480px;
+    margin: 2.5rem auto 0;
+    font-size: 1rem;
+    line-height: 1.8;
+    color: rgba(255,255,255,0.55);
+    opacity: 0;
+    animation: fadeUp 0.9s ease forwards 0.7s;
+  }
+
+  .hero-cta {
+    margin-top: 3rem;
+    opacity: 0;
+    animation: fadeUp 0.9s ease forwards 0.85s;
+    display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;
+  }
+
+  .btn-primary {
+    display: inline-flex; align-items: center; gap: 0.5rem;
+    padding: 0.85rem 2rem;
+    background: var(--white);
+    color: var(--black);
+    text-decoration: none;
+    font-size: 0.8rem; letter-spacing: 0.1em; text-transform: uppercase;
+    border-radius: 2px;
+    transition: opacity 0.2s;
+  }
+  .btn-primary:hover { opacity: 0.85; }
+
+  .btn-secondary {
+    display: inline-flex; align-items: center; gap: 0.5rem;
+    padding: 0.85rem 2rem;
+    border: 1px solid var(--border);
+    color: var(--muted);
+    text-decoration: none;
+    font-size: 0.8rem; letter-spacing: 0.1em; text-transform: uppercase;
+    border-radius: 2px;
+    transition: color 0.2s, border-color 0.2s;
+  }
+  .btn-secondary:hover { color: var(--white); border-color: rgba(255,255,255,0.25); }
+
+  /* FEATURES */
+  .features {
+    padding: 7rem 2rem;
+    max-width: 960px; margin: 0 auto;
+  }
+
+  .section-label {
+    font-size: 0.7rem; letter-spacing: 0.3em;
+    text-transform: uppercase; color: var(--muted);
+    margin-bottom: 3.5rem; text-align: center;
+  }
+
+  .features-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 1px;
+    border: 1px solid var(--border);
+  }
+
+  .feature-item {
+    padding: 2.5rem;
+    border-right: 1px solid var(--border);
+    position: relative;
+  }
+  .feature-item:last-child { border-right: none; }
+
+  .feature-number {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 2.5rem; font-weight: 300;
+    color: rgba(255,255,255,0.1);
+    line-height: 1;
+    margin-bottom: 1.25rem;
+  }
+
+  .feature-title {
+    font-size: 0.95rem; font-weight: 400;
+    color: var(--silver);
+    margin-bottom: 0.75rem;
+    letter-spacing: 0.02em;
+  }
+
+  .feature-desc {
+    font-size: 0.85rem;
+    color: var(--muted);
+    line-height: 1.75;
+  }
+
+  /* DIVIDER */
+  .divider {
+    max-width: 960px; margin: 0 auto;
+    border: none; border-top: 1px solid var(--border);
+  }
+
+  /* FOOTER */
+  footer {
+    padding: 2.5rem 3rem;
+    border-top: 1px solid var(--border);
+    display: flex; align-items: center; justify-content: space-between;
+    flex-wrap: wrap; gap: 1rem;
+  }
+
+  footer .footer-brand {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1rem; letter-spacing: 0.1em;
+    color: var(--muted);
+  }
+
+  footer nav { position: static; background: none; border: none; backdrop-filter: none; padding: 0; }
+
+  .footer-links { display: flex; gap: 2rem; list-style: none; }
+  .footer-links a {
+    text-decoration: none; color: var(--muted);
+    font-size: 0.75rem; letter-spacing: 0.1em; text-transform: uppercase;
+    transition: color 0.2s;
+  }
+  .footer-links a:hover { color: var(--white); }
+
+  .footer-copy {
+    font-size: 0.72rem; color: rgba(255,255,255,0.2);
+    letter-spacing: 0.05em;
+  }
+
+  @keyframes fadeUp {
+    from { opacity: 0; transform: translateY(18px); }
+    to   { opacity: 1; transform: translateY(0); }
+  }
+
+  @media (max-width: 640px) {
+    nav { padding: 1.25rem 1.5rem; }
+    .nav-links { display: none; }
+    footer { padding: 2rem 1.5rem; flex-direction: column; align-items: flex-start; }
+    .features-grid { grid-template-columns: 1fr; }
+    .feature-item { border-right: none; border-bottom: 1px solid var(--border); }
+    .feature-item:last-child { border-bottom: none; }
+  }
+</style>
+</head>
+<body>
+
+<nav>
+  <a href="index.html" class="nav-logo">
+    <img src="new_logo.png" alt="Kronus">
+    <span>Kronus</span>
+  </a>
+  <ul class="nav-links">
+    <li><a href="support.html">Suporte</a></li>
+    <li><a href="privacy.html">Privacidade</a></li>
+  </ul>
+</nav>
+
+<section class="hero">
+  <img src="new_logo.png" alt="Kronus" class="hero-logo">
+  <h1 class="hero-title">KRONUS</h1>
+  <p class="hero-tagline">Discipline your time</p>
+  <p class="hero-desc">Turn your daily actions into powerful insights. Track your time every 15 minutes and discover patterns that improve your life.</p>
+  <div class="hero-cta">
+    <a href="#" class="btn-primary">
+      <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M7 1v8M3.5 5.5L7 9l3.5-3.5M2 11h10" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      App Store
+    </a>
+    <a href="support.html" class="btn-secondary">Suporte</a>
+  </div>
+</section>
+
+<section class="features">
+  <p class="section-label">O que o Kronus faz por si</p>
+  <div class="features-grid">
+    <div class="feature-item">
+      <div class="feature-number">01</div>
+      <h3 class="feature-title">Registo a cada 15 minutos</h3>
+      <p class="feature-desc">Capture como passa o seu tempo ao longo do dia com uma granularidade que revela o que outras apps escondem.</p>
+    </div>
+    <div class="feature-item">
+      <div class="feature-number">02</div>
+      <h3 class="feature-title">Padrões e insights</h3>
+      <p class="feature-desc">Visualize tendências ao longo de dias, semanas e meses. Perceba quando é mais produtivo e o que o distrai.</p>
+    </div>
+    <div class="feature-item">
+      <div class="feature-number">03</div>
+      <h3 class="feature-title">Disciplina transformada em dados</h3>
+      <p class="feature-desc">Transforme pequenas ações diárias em evidência concreta do seu progresso pessoal e profissional.</p>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <span class="footer-brand">Kronus</span>
+  <ul class="footer-links">
+    <li><a href="privacy.html">Política de Privacidade</a></li>
+    <li><a href="support.html">Suporte</a></li>
+  </ul>
+  <span class="footer-copy">&copy; 2025 Kronus. Todos os direitos reservados.</span>
+</footer>
+
+</body>
+</html>

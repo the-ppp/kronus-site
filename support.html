@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Suporte — Kronus</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500&family=DM+Sans:wght@300;400&display=swap" rel="stylesheet">
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  :root {
+    --black: #080808;
+    --surface: #111111;
+    --border: rgba(255,255,255,0.08);
+    --silver: #c8c8c8;
+    --white: #f0f0f0;
+    --muted: rgba(255,255,255,0.38);
+  }
+
+  body {
+    background: var(--black);
+    color: var(--white);
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 300;
+    min-height: 100vh;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  nav {
+    position: fixed; top: 0; left: 0; right: 0; z-index: 100;
+    display: flex; align-items: center; justify-content: space-between;
+    padding: 1.5rem 3rem;
+    border-bottom: 1px solid var(--border);
+    background: rgba(8,8,8,0.85);
+    backdrop-filter: blur(12px);
+  }
+
+  .nav-logo {
+    display: flex; align-items: center; gap: 0.75rem;
+    text-decoration: none; color: var(--white);
+  }
+
+  .nav-logo img { width: 28px; height: 28px; border-radius: 6px; }
+
+  .nav-logo span {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.3rem; font-weight: 400; letter-spacing: 0.08em;
+  }
+
+  .nav-links { display: flex; gap: 2rem; list-style: none; }
+  .nav-links a {
+    text-decoration: none; color: var(--muted);
+    font-size: 0.8rem; letter-spacing: 0.1em; text-transform: uppercase;
+    transition: color 0.2s;
+  }
+  .nav-links a:hover, .nav-links a.active { color: var(--white); }
+
+  main {
+    max-width: 720px; margin: 0 auto;
+    padding: 10rem 2rem 6rem;
+  }
+
+  .page-label {
+    font-size: 0.7rem; letter-spacing: 0.3em;
+    text-transform: uppercase; color: var(--muted);
+    margin-bottom: 1rem;
+  }
+
+  .page-title {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: clamp(2.5rem, 6vw, 4rem);
+    font-weight: 300; letter-spacing: 0.06em;
+    line-height: 1.1;
+    margin-bottom: 1.5rem;
+  }
+
+  .page-intro {
+    font-size: 0.95rem; line-height: 1.8;
+    color: rgba(255,255,255,0.55);
+    max-width: 520px;
+    margin-bottom: 4rem;
+  }
+
+  .faq-list { margin-bottom: 5rem; }
+
+  .faq-item {
+    border-top: 1px solid var(--border);
+    padding: 1.75rem 0;
+  }
+  .faq-item:last-child { border-bottom: 1px solid var(--border); }
+
+  .faq-q {
+    font-size: 0.95rem; font-weight: 400;
+    color: var(--silver); margin-bottom: 0.75rem;
+    letter-spacing: 0.01em;
+  }
+
+  .faq-a {
+    font-size: 0.85rem; line-height: 1.8;
+    color: var(--muted);
+  }
+
+  .contact-block {
+    padding: 3rem;
+    border: 1px solid var(--border);
+    border-radius: 2px;
+  }
+
+  .contact-label {
+    font-size: 0.7rem; letter-spacing: 0.3em;
+    text-transform: uppercase; color: var(--muted);
+    margin-bottom: 1rem;
+  }
+
+  .contact-heading {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.8rem; font-weight: 300;
+    letter-spacing: 0.06em; margin-bottom: 0.75rem;
+  }
+
+  .contact-desc {
+    font-size: 0.85rem; line-height: 1.8;
+    color: var(--muted); margin-bottom: 2rem;
+    max-width: 420px;
+  }
+
+  .contact-email {
+    display: inline-flex; align-items: center; gap: 0.75rem;
+    padding: 0.9rem 1.75rem;
+    border: 1px solid rgba(255,255,255,0.15);
+    color: var(--white);
+    text-decoration: none;
+    font-size: 0.82rem; letter-spacing: 0.08em;
+    border-radius: 2px;
+    transition: background 0.2s, border-color 0.2s;
+  }
+  .contact-email:hover {
+    background: rgba(255,255,255,0.05);
+    border-color: rgba(255,255,255,0.3);
+  }
+
+  footer {
+    padding: 2.5rem 3rem;
+    border-top: 1px solid var(--border);
+    display: flex; align-items: center; justify-content: space-between;
+    flex-wrap: wrap; gap: 1rem;
+  }
+
+  footer nav { position: static; background: none; border: none; backdrop-filter: none; padding: 0; }
+
+  .footer-brand {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1rem; letter-spacing: 0.1em; color: var(--muted);
+  }
+
+  .footer-links { display: flex; gap: 2rem; list-style: none; }
+  .footer-links a {
+    text-decoration: none; color: var(--muted);
+    font-size: 0.75rem; letter-spacing: 0.1em; text-transform: uppercase;
+    transition: color 0.2s;
+  }
+  .footer-links a:hover { color: var(--white); }
+
+  .footer-copy { font-size: 0.72rem; color: rgba(255,255,255,0.2); letter-spacing: 0.05em; }
+
+  @media (max-width: 640px) {
+    nav { padding: 1.25rem 1.5rem; }
+    .nav-links { display: none; }
+    footer { padding: 2rem 1.5rem; flex-direction: column; align-items: flex-start; }
+    .contact-block { padding: 2rem 1.5rem; }
+  }
+</style>
+</head>
+<body>
+
+<nav>
+  <a href="index.html" class="nav-logo">
+    <img src="new_logo.png" alt="Kronus">
+    <span>Kronus</span>
+  </a>
+  <ul class="nav-links">
+    <li><a href="support.html" class="active">Suporte</a></li>
+    <li><a href="privacy.html">Privacidade</a></li>
+  </ul>
+</nav>
+
+<main>
+  <p class="page-label">Ajuda &amp; Suporte</p>
+  <h1 class="page-title">Como podemos<br>ajudar?</h1>
+  <p class="page-intro">Encontre respostas às perguntas mais frequentes ou entre em contacto diretamente connosco.</p>
+
+  <div class="faq-list">
+    <div class="faq-item">
+      <p class="faq-q">Como funciona o registo de tempo no Kronus?</p>
+      <p class="faq-a">O Kronus permite-lhe registar as suas atividades em blocos de 15 minutos ao longo do dia. No final do dia, obterá uma visão clara de como distribuiu o seu tempo.</p>
+    </div>
+    <div class="faq-item">
+      <p class="faq-q">Os meus dados são guardados de forma segura?</p>
+      <p class="faq-a">Sim. Os seus dados são armazenados localmente no seu dispositivo. Consulte a nossa <a href="privacy.html" style="color: var(--silver); text-decoration: underline; text-underline-offset: 3px;">Política de Privacidade</a> para mais detalhes.</p>
+    </div>
+    <div class="faq-item">
+      <p class="faq-q">O Kronus está disponível para Android?</p>
+      <p class="faq-a">Atualmente o Kronus está disponível para iOS. Uma versão para Android está em desenvolvimento — registe-se na nossa lista de espera para ser notificado.</p>
+    </div>
+    <div class="faq-item">
+      <p class="faq-q">Como posso apagar os meus dados?</p>
+      <p class="faq-a">Pode apagar todos os seus dados a partir das definições da app, em Definições → Dados → Apagar todos os dados. Esta ação é irreversível.</p>
+    </div>
+  </div>
+
+  <div class="contact-block">
+    <p class="contact-label">Contacto</p>
+    <h2 class="contact-heading">Ainda tem dúvidas?</h2>
+    <p class="contact-desc">A nossa equipa está disponível para responder a qualquer questão. Respondemos habitualmente dentro de 24 horas.</p>
+    <a href="mailto:pedromppinto.mail@gmail.com" class="contact-email">
+      <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><rect x="1" y="3" width="12" height="8" rx="1.5" stroke="currentColor" stroke-width="1.1"/><path d="M1 4l6 4 6-4" stroke="currentColor" stroke-width="1.1"/></svg>
+      pedromppinto.mail@gmail.com
+    </a>
+  </div>
+</main>
+
+<footer>
+  <span class="footer-brand">Kronus</span>
+  <ul class="footer-links">
+    <li><a href="privacy.html">Política de Privacidade</a></li>
+    <li><a href="support.html">Suporte</a></li>
+  </ul>
+  <span class="footer-copy">&copy; 2025 Kronus. Todos os direitos reservados.</span>
+</footer>
+
+</body>
+</html>
