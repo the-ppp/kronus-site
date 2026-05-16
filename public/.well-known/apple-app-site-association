@@ -1,0 +1,12 @@
+{
+  "applinks": {
+    "details": [
+      {
+        "appIDs": ["YOUR_TEAM_ID.com.anonymous.my-daily-log"],
+        "components": [
+          { "/": "/auth/callback" }
+        ]
+      }
+    ]
+  }
+}
