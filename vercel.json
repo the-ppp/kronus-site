@@ -1,5 +1,4 @@
 {
-  "outputDirectory": "public",
   "cleanUrls": true,
   "headers": [
     {
@@ -13,4 +12,3 @@
     }
   ]
 }
-
