@@ -7,180 +7,25 @@
 <meta name="description" content="Kronus Terms of Service for the Kronus discipline and habit tracker app for iPhone.">
 <link rel="canonical" href="https://www.kronusdiscipline.com/terms">
 <meta name="apple-itunes-app" content="app-id=6760615998">
-<link rel="icon" href="new_logo.png">
+<link rel="icon" href="/favicon.png" type="image/png">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<meta name="theme-color" content="#0a0a0b">
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500&family=DM+Sans:wght@300;400&display=swap" rel="stylesheet">
-<style>
-  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-
-  :root {
-    --black: #080808;
-    --surface: #111111;
-    --border: rgba(255,255,255,0.08);
-    --silver: #c8c8c8;
-    --white: #f0f0f0;
-    --muted: rgba(255,255,255,0.38);
-  }
-
-  body {
-    background: var(--black);
-    color: var(--white);
-    font-family: 'DM Sans', sans-serif;
-    font-weight: 300;
-    min-height: 100vh;
-    -webkit-font-smoothing: antialiased;
-  }
-
-  nav {
-    position: fixed; top: 0; left: 0; right: 0; z-index: 100;
-    display: flex; align-items: center; justify-content: space-between;
-    padding: 1.5rem 3rem;
-    border-bottom: 1px solid var(--border);
-    background: rgba(8,8,8,0.85);
-    backdrop-filter: blur(12px);
-  }
-
-  .nav-logo {
-    display: flex; align-items: center; gap: 0.75rem;
-    text-decoration: none; color: var(--white);
-  }
-
-  .nav-logo img { width: 28px; height: 28px; border-radius: 6px; }
-
-  .nav-logo span {
-    font-family: 'Cormorant Garamond', serif;
-    font-size: 1.3rem; font-weight: 400; letter-spacing: 0.08em;
-  }
-
-  .nav-links { display: flex; gap: 2rem; list-style: none; }
-  .nav-links a {
-    text-decoration: none; color: var(--muted);
-    font-size: 0.8rem; letter-spacing: 0.1em; text-transform: uppercase;
-    transition: color 0.2s;
-  }
-  .nav-links a:hover, .nav-links a.active { color: var(--white); }
-
-  main {
-    max-width: 720px; margin: 0 auto;
-    padding: 10rem 2rem 6rem;
-  }
-
-  .page-label {
-    font-size: 0.7rem; letter-spacing: 0.3em;
-    text-transform: uppercase; color: var(--muted);
-    margin-bottom: 1rem;
-  }
-
-  .page-title {
-    font-family: 'Cormorant Garamond', serif;
-    font-size: clamp(2.5rem, 6vw, 4rem);
-    font-weight: 300; letter-spacing: 0.06em;
-    line-height: 1.1;
-    margin-bottom: 1.5rem;
-  }
-
-  .last-updated {
-    font-size: 0.78rem; color: var(--muted);
-    letter-spacing: 0.05em; margin-bottom: 4rem;
-  }
-
-  .privacy-content h2 {
-    font-family: 'Cormorant Garamond', serif;
-    font-size: 1.5rem; font-weight: 400;
-    letter-spacing: 0.04em; color: var(--silver);
-    margin-top: 3rem; margin-bottom: 1rem;
-    padding-top: 3rem;
-    border-top: 1px solid var(--border);
-  }
-
-  .privacy-content h2:first-child { border-top: none; padding-top: 0; }
-
-  .privacy-content p {
-    font-size: 0.9rem; line-height: 1.85;
-    color: rgba(255,255,255,0.55);
-    margin-bottom: 1rem;
-  }
-
-  .privacy-content ul {
-    list-style: none;
-    margin-bottom: 1rem;
-  }
-
-  .privacy-content ul li {
-    font-size: 0.9rem; line-height: 1.85;
-    color: rgba(255,255,255,0.55);
-    padding: 0.25rem 0 0.25rem 1.25rem;
-    position: relative;
-  }
-
-  .privacy-content ul li::before {
-    content: '—';
-    position: absolute; left: 0;
-    color: rgba(255,255,255,0.2);
-  }
-
-  .privacy-content h3 {
-    font-size: 0.72rem; font-weight: 400;
-    letter-spacing: 0.2em; text-transform: uppercase;
-    color: var(--muted);
-    margin-top: 2rem; margin-bottom: 0.75rem;
-  }
-
-  .privacy-content strong {
-    color: rgba(255,255,255,0.7);
-    font-weight: 400;
-  }
-
-  .privacy-content a {
-    color: var(--silver);
-    text-decoration: underline;
-    text-underline-offset: 3px;
-  }
-
-  footer {
-    padding: 2.5rem 3rem;
-    border-top: 1px solid var(--border);
-    display: flex; align-items: center; justify-content: space-between;
-    flex-wrap: wrap; gap: 1rem;
-  }
-
-  footer nav { position: static; background: none; border: none; backdrop-filter: none; padding: 0; }
-
-  .footer-brand {
-    font-family: 'Cormorant Garamond', serif;
-    font-size: 1rem; letter-spacing: 0.1em; color: var(--muted);
-  }
-
-  .footer-links { display: flex; gap: 2rem; list-style: none; }
-  .footer-links a {
-    text-decoration: none; color: var(--muted);
-    font-size: 0.75rem; letter-spacing: 0.1em; text-transform: uppercase;
-    transition: color 0.2s;
-  }
-  .footer-links a:hover { color: var(--white); }
-
-  .footer-copy { font-size: 0.72rem; color: rgba(255,255,255,0.2); letter-spacing: 0.05em; }
-
-  @media (max-width: 640px) {
-    nav { padding: 1.25rem 1.5rem; }
-    .nav-links { display: none; }
-    footer { padding: 2rem 1.5rem; flex-direction: column; align-items: flex-start; }
-  }
-</style>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/pages.css">
 </head>
 <body>
 
-<nav>
-  <a href="/" class="nav-logo">
-    <img src="new_logo.png" alt="Kronus">
-    <span>Kronus</span>
-  </a>
-  <ul class="nav-links">
-    <li><a href="/support">Support</a></li>
-    <li><a href="/privacy">Privacy</a></li>
-    <li><a href="/terms" class="active">Terms</a></li>
-  </ul>
-</nav>
+<header class="site-header">
+  <a href="/" class="logo"><img src="/logo.png" alt="">KRONUS</a>
+  <nav class="site-nav" aria-label="Main">
+    <a href="/support" class="text-link">Support</a>
+    <a href="/privacy" class="text-link">Privacy</a>
+    <a href="/terms" class="text-link active">Terms</a>
+    <a href="https://apps.apple.com/app/apple-store/id6760615998?pt=128353504&amp;ct=web_terms&amp;mt=8" class="nav-cta">Get the app</a>
+  </nav>
+</header>
 
 <main>
   <p class="page-label">Legal</p>
@@ -300,13 +145,16 @@
 </main>
 
 <footer>
-  <span class="footer-brand">Kronus</span>
-  <ul class="footer-links">
-    <li><a href="/privacy">Privacy Policy</a></li>
-    <li><a href="/terms">Terms of Service</a></li>
-    <li><a href="/support">Support</a></li>
-  </ul>
-  <span class="footer-copy">&copy; 2026 Kronus. All rights reserved.</span>
+  <div class="foot">
+    <span class="brand">KRONUS</span>
+    <nav aria-label="Footer">
+      <a href="/#faq">FAQ</a>
+      <a href="/support">Support</a>
+      <a href="/privacy">Privacy</a>
+      <a href="/terms">Terms</a>
+    </nav>
+    <span>© 2026 Kronus</span>
+  </div>
 </footer>
 
 <script>window.va = window.va || function () { (window.vaq = window.vaq || []).push(arguments); };</script>
