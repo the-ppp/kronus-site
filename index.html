@@ -4,13 +4,14 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Kronus – Discipline &amp; Habit Tracker for iPhone</title>
-<meta name="description" content="Kronus is an iPhone habit tracker built for discipline. Build daily habits, earn XP, climb ranks, keep streaks and see weekly, monthly and yearly stats. Free to download on the App Store.">
+<meta name="description" content="Kronus is an iPhone habit tracker built for discipline. Build daily habits, earn XP, climb 28 ranks, keep streaks and see weekly, monthly and yearly stats. Free to download on the App Store.">
 <link rel="canonical" href="https://www.kronusdiscipline.com/">
 <meta name="apple-itunes-app" content="app-id=6760615998">
+<meta name="theme-color" content="#0a0a0b">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Kronus">
 <meta property="og:title" content="Kronus – Discipline &amp; Habit Tracker for iPhone">
-<meta property="og:description" content="Turn your goals into daily habits and see, day by day, whether you're actually doing them. XP, ranks, streaks and clear stats.">
+<meta property="og:description" content="Lock in. Turn your goals into daily habits and see, day by day, whether you're actually doing them. XP, ranks, streaks and clear stats.">
 <meta property="og:url" content="https://www.kronusdiscipline.com/">
 <meta property="og:image" content="https://www.kronusdiscipline.com/new_logo.png">
 <meta name="twitter:card" content="summary">
@@ -24,7 +25,7 @@
       "@id": "https://www.kronusdiscipline.com/#app",
       "name": "Kronus - Discipline Tracker",
       "alternateName": "Kronus",
-      "description": "Kronus is a discipline and habit tracker for iPhone. Pick habits from a ready-made library or create your own, schedule them by weekday, times per week or month, or every few days, check them off daily, earn XP, climb ranks, keep streaks, and see weekly, monthly and yearly stats. Includes reminders, focus timers, vacation mode and a community.",
+      "description": "Kronus is a discipline and habit tracker for iPhone. Pick habits from a ready-made library or create your own, schedule them by weekday, times per week or month, or every few days, check them off daily, earn XP, get a +50 XP bonus for a complete day, climb 28 levels from Wood to Sapphire, keep streaks, and see weekly, monthly and yearly stats. Includes reminders, focus timers, vacation mode and a community.",
       "operatingSystem": "iOS",
       "applicationCategory": "LifestyleApplication",
       "applicationSubCategory": "Habit tracker",
@@ -32,6 +33,12 @@
       "downloadUrl": "https://apps.apple.com/app/id6760615998",
       "installUrl": "https://apps.apple.com/app/id6760615998",
       "image": "https://www.kronusdiscipline.com/new_logo.png",
+      "screenshot": [
+        "https://www.kronusdiscipline.com/images/screen-habits.webp",
+        "https://www.kronusdiscipline.com/images/phone-progress.webp",
+        "https://www.kronusdiscipline.com/images/screen-stats.webp",
+        "https://www.kronusdiscipline.com/images/screen-community.webp"
+      ],
       "inLanguage": "en",
       "offers": {
         "@type": "Offer",
@@ -64,412 +71,395 @@
     {
       "@type": "FAQPage",
       "mainEntity": [
-        {
-          "@type": "Question",
-          "name": "What is Kronus?",
-          "acceptedAnswer": { "@type": "Answer", "text": "Kronus is a discipline and habit tracker for iPhone. You turn your goals into daily habits, check them off every day, earn XP, climb ranks and keep streaks, and see clear weekly, monthly and yearly stats on whether you are actually doing them." }
-        },
-        {
-          "@type": "Question",
-          "name": "How is Kronus different from other habit trackers?",
-          "acceptedAnswer": { "@type": "Answer", "text": "Kronus is built around discipline rather than motivation. Every completed habit earns XP, completing your whole day earns a bonus, and you climb through ranks. Vacation mode lets you take a planned break without breaking your streak, and the Kronus community lets you share wins and setbacks." }
-        },
-        {
-          "@type": "Question",
-          "name": "Who is Kronus for?",
-          "acceptedAnswer": { "@type": "Answer", "text": "People who want discipline, not motivation: builders, athletes, students, entrepreneurs, and anyone tired of starting over who wants a clear system for daily execution. Common goals include the gym, money and career, quitting bad habits and building confidence." }
-        },
-        {
-          "@type": "Question",
-          "name": "Is Kronus free?",
-          "acceptedAnswer": { "@type": "Answer", "text": "Kronus is free to download on the App Store. Kronus Premium is an optional auto-renewing subscription. Prices in your currency, and any free trial terms, are shown in the app before you pay. You can cancel any time in your Apple account settings." }
-        },
-        {
-          "@type": "Question",
-          "name": "Is Kronus available on Android?",
-          "acceptedAnswer": { "@type": "Answer", "text": "Kronus is currently available for iPhone on the App Store." }
-        },
-        {
-          "@type": "Question",
-          "name": "How do I cancel my Kronus subscription?",
-          "acceptedAnswer": { "@type": "Answer", "text": "Open the Settings app on your iPhone, tap your name, then Subscriptions, choose Kronus and tap Cancel Subscription. Cancel at least 24 hours before the end of the current period to avoid a renewal." }
-        }
+        { "@type": "Question", "name": "What is Kronus?", "acceptedAnswer": { "@type": "Answer", "text": "A discipline and habit tracker for iPhone. Turn your goals into daily habits, check them off, earn XP, climb ranks and see clear weekly, monthly and yearly stats." } },
+        { "@type": "Question", "name": "How is it different from other habit trackers?", "acceptedAnswer": { "@type": "Answer", "text": "It's built around discipline, not motivation: XP for every habit, a bonus for a complete day, 28 ranks, streaks, vacation mode and a community." } },
+        { "@type": "Question", "name": "Is Kronus free?", "acceptedAnswer": { "@type": "Answer", "text": "Free to download. Kronus Premium is an optional subscription; prices and any trial are shown in the app before you pay." } },
+        { "@type": "Question", "name": "What happens if I miss a day?", "acceptedAnswer": { "@type": "Answer", "text": "Your current streak starts again, but your best streak stays on record and every XP and rank you earned stays yours. Days with nothing scheduled never break a streak." } },
+        { "@type": "Question", "name": "Can I take a break without losing my streak?", "acceptedAnswer": { "@type": "Answer", "text": "Yes. Vacation mode pauses your habits for the dates you choose, so a trip or a sick week doesn't cost you the streak." } },
+        { "@type": "Question", "name": "Is my data private?", "acceptedAnswer": { "@type": "Answer", "text": "Your habits sync to your account so you can restore them on a new phone. We don't sell your data, and you can delete your account and everything in it from Settings at any time." } },
+        { "@type": "Question", "name": "Can I cancel anytime?", "acceptedAnswer": { "@type": "Answer", "text": "Yes. iPhone Settings › your name › Subscriptions › Kronus › Cancel Subscription. Cancel at least 24 hours before the period ends to avoid a renewal." } },
+        { "@type": "Question", "name": "Is Kronus on Android?", "acceptedAnswer": { "@type": "Answer", "text": "Kronus is currently available for iPhone on the App Store." } }
       ]
     }
   ]
 }
 </script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500&family=DM+Sans:wght@300;400&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@300;400;600;700;800&display=swap" rel="stylesheet">
 <style>
-  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-
+  *, *::before, *::after { box-sizing: border-box; }
   :root {
-    --black: #080808;
-    --surface: #111111;
-    --border: rgba(255,255,255,0.08);
-    --silver: #c8c8c8;
-    --white: #f0f0f0;
-    --muted: rgba(255,255,255,0.38);
+    --ink: #0a0a0b;
+    --card: #151517;
+    --cream: #f2eee6;
+    --amber: #e8a33d;
+    --muted: rgba(242,238,230,0.72);
+    --faint: rgba(242,238,230,0.6);
+    --line: rgba(255,255,255,0.08);
   }
-
   html { scroll-behavior: smooth; }
+  body { margin: 0; background: var(--ink); color: var(--cream); font-family: 'Sora', sans-serif; -webkit-font-smoothing: antialiased; overflow-x: hidden; }
+  a { color: var(--cream); }
+  a:hover { color: var(--amber); }
+  img { max-width: 100%; }
+  h1, h2, h3, p, figure, blockquote { margin: 0; }
+  .wrap { max-width: 1280px; margin: 0 auto; padding-left: 24px; padding-right: 24px; }
+  .amber { color: var(--amber); }
+  .kicker { font-weight: 600; letter-spacing: 0.32em; color: var(--amber); }
+  .display { font-weight: 800; letter-spacing: -0.035em; line-height: 0.95; }
+  .lead { font-weight: 300; font-size: 18px; line-height: 1.6; color: var(--muted); }
 
-  body {
-    background: var(--black);
-    color: var(--white);
-    font-family: 'DM Sans', sans-serif;
-    font-weight: 300;
-    min-height: 100vh;
-    -webkit-font-smoothing: antialiased;
+  /* Buttons */
+  .btn { display: inline-flex; align-items: center; gap: 10px; min-height: 56px; padding: 0 28px; border-radius: 16px; font-family: inherit; font-weight: 700; font-size: 16px; text-decoration: none; cursor: pointer; border: 0; }
+  .btn-primary { background: var(--cream); color: var(--ink); }
+  .btn-primary:hover { color: var(--ink); background: #fff; }
+  .btn-ghost { background: transparent; color: var(--cream); border: 1.5px solid rgba(242,238,230,0.35); }
+  .btn-ghost:hover { border-color: var(--amber); color: var(--amber); }
+  .btn svg { flex: none; }
+
+  /* Nav */
+  .nav { display: flex; justify-content: space-between; align-items: center; gap: 16px; padding-top: 22px; padding-bottom: 22px; }
+  .logo { display: flex; align-items: center; gap: 10px; text-decoration: none; font-weight: 800; font-size: 18px; letter-spacing: 0.06em; }
+  .logo img { width: 30px; height: 30px; border-radius: 8px; }
+  .nav-cta { display: inline-flex; align-items: center; min-height: 44px; padding: 0 20px; border-radius: 999px; background: var(--amber); color: var(--ink); text-decoration: none; font-weight: 700; font-size: 14px; }
+  .nav-cta:hover { color: var(--ink); background: #f0b356; }
+
+  /* Hero */
+  .hero { text-align: center; padding: clamp(40px, 6vw, 80px) 24px 0; }
+  .hero .kicker { font-size: clamp(12px, 1.4vw, 18px); letter-spacing: 0.34em; }
+  .hero h1 { margin-top: 16px; font-weight: 800; font-size: clamp(60px, 17vw, 270px); line-height: 0.86; letter-spacing: -0.04em; }
+  .hero .lead { margin: 28px auto 0; max-width: 560px; font-size: clamp(16px, 1.5vw, 20px); }
+  .hero-ctas { margin-top: 32px; display: flex; flex-wrap: wrap; justify-content: center; gap: 14px; }
+  .hero-stage { position: relative; max-width: 1280px; margin: 48px auto 0; display: flex; flex-wrap: wrap; justify-content: center; align-items: center; gap: 32px; }
+  .hero-glow { position: absolute; left: 50%; bottom: -120px; width: 900px; height: 600px; transform: translateX(-50%); background: radial-gradient(ellipse at center, rgba(232,163,61,0.42) 0%, rgba(178,74,20,0.18) 40%, rgba(10,10,11,0) 70%); pointer-events: none; }
+  .hero-stat { position: relative; flex: 1 1 220px; max-width: 300px; }
+  .hero-stat .big { font-weight: 800; font-size: clamp(44px, 5vw, 72px); letter-spacing: -0.03em; }
+  .hero-stat p:last-child { margin-top: 6px; font-size: 17px; color: var(--muted); }
+  .hero-stat.left { text-align: left; order: 1; }
+  .hero-stat.right { text-align: right; order: 3; display: flex; flex-direction: column; align-items: flex-end; }
+  .hero-phone { position: relative; order: 2; width: min(100%, 380px); height: auto; margin-bottom: -40px; }
+
+  /* Ticker */
+  .ticker { position: relative; background: var(--amber); color: var(--ink); padding: 18px 0; white-space: nowrap; overflow: hidden; transform: rotate(-1.5deg); margin: 40px -20px 0; }
+  .ticker p { font-weight: 800; font-size: 26px; letter-spacing: 0.04em; display: inline-block; animation: marquee 30s linear infinite; }
+  @keyframes marquee { from { transform: translateX(0); } to { transform: translateX(-50%); } }
+  @media (prefers-reduced-motion: reduce) { .ticker p { animation: none; } }
+
+  /* Sections */
+  .section { padding-top: clamp(90px, 11vw, 150px); }
+  .section-h { font-size: clamp(38px, 7vw, 104px); }
+  .grid { display: grid; gap: 16px; }
+  .card { border-radius: 24px; background: var(--card); border: 1px solid rgba(255,255,255,0.07); }
+  .pains { grid-template-columns: repeat(auto-fit, minmax(min(100%, 300px), 1fr)); }
+  .pain { border-radius: 24px; border: 1px solid rgba(255,255,255,0.1); padding: 28px; display: flex; flex-direction: column; gap: 10px; }
+  .pain h3, .war h3 { font-weight: 700; font-size: 21px; }
+  .pain p, .war p, .step p { font-size: 15px; line-height: 1.6; color: rgba(242,238,230,0.66); }
+  .wars { grid-template-columns: repeat(auto-fit, minmax(min(100%, 270px), 1fr)); }
+  .war { padding: 32px 28px; min-height: 280px; display: flex; flex-direction: column; justify-content: space-between; gap: 24px; }
+  .war .num { font-weight: 800; font-size: 64px; line-height: 1; color: rgba(232,163,61,0.9); }
+  .war h3 { font-size: 24px; margin-bottom: 10px; }
+
+  .steps { border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); margin-top: clamp(60px, 8vw, 110px); }
+  .steps-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 320px), 1fr)); }
+  .step { padding: 56px 32px; border-right: 1px solid var(--line); display: flex; flex-direction: column; gap: 14px; }
+  .step .num { font-weight: 800; font-size: clamp(90px, 10vw, 150px); line-height: 0.85; letter-spacing: -0.05em; color: transparent; -webkit-text-stroke: 1.5px rgba(242,238,230,0.5); }
+  .step h3 { font-weight: 700; font-size: 26px; }
+
+  .showcase { display: flex; flex-direction: column; gap: clamp(64px, 9vw, 120px); }
+  .feature { display: flex; flex-wrap: wrap; align-items: center; gap: 48px; }
+  .feature-copy, .miss-copy, .miss-list { min-width: 0; }
+  .feature.reverse { flex-direction: row-reverse; }
+  .feature-copy { flex: 1 1 320px; display: flex; flex-direction: column; gap: 16px; }
+  .feature-copy .kicker { font-weight: 800; font-size: 15px; letter-spacing: 0.3em; }
+  .feature-copy h3 { font-weight: 800; font-size: clamp(32px, 5vw, 76px); line-height: 0.95; letter-spacing: -0.035em; }
+  .feature-copy p { max-width: 460px; }
+  .feature-media { flex: 1 1 300px; display: flex; justify-content: center; position: relative; }
+  .feature-media::before { content: ""; position: absolute; inset: 10%; background: radial-gradient(circle, rgba(232,163,61,0.3), rgba(10,10,11,0) 70%); }
+  .screen { position: relative; width: min(100%, 340px); border-radius: 40px; overflow: hidden; border: 1px solid rgba(255,255,255,0.1); background: #0d1220; }
+  .screen img { display: block; width: 100%; height: auto; }
+
+  .miss { border-radius: 32px; padding: clamp(32px, 5vw, 64px); display: flex; flex-wrap: wrap; gap: 40px; align-items: center; }
+  .miss-copy { flex: 1 1 300px; }
+  .miss-copy h2 { margin-top: 12px; font-size: clamp(36px, 5vw, 72px); }
+  .miss-list { flex: 1 1 300px; grid-template-columns: repeat(auto-fit, minmax(min(100%, 200px), 1fr)); gap: 24px; }
+  .miss-list h3 { font-weight: 700; font-size: 18px; margin-bottom: 6px; }
+  .miss-list p { font-size: 15px; line-height: 1.6; color: rgba(242,238,230,0.66); }
+
+  .reviews-head { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: flex-end; gap: 16px; margin-bottom: 40px; }
+  .reviews-head a { font-weight: 600; font-size: 15px; color: var(--amber); }
+  .reviews { grid-template-columns: repeat(auto-fit, minmax(min(100%, 270px), 1fr)); }
+  .review { padding: 28px; display: flex; flex-direction: column; justify-content: space-between; gap: 20px; }
+  .stars { color: var(--amber); letter-spacing: 4px; margin-bottom: 14px; }
+  .review blockquote { font-size: 17px; line-height: 1.55; }
+  .review figcaption { font-size: 13px; color: var(--faint); }
+
+  .faq { max-width: 900px; }
+  .faq details { border-top: 1px solid rgba(255,255,255,0.12); padding: 22px 0; }
+  .faq details:last-of-type { border-bottom: 1px solid rgba(255,255,255,0.12); }
+  .faq summary { cursor: pointer; font-weight: 700; font-size: 19px; list-style: none; display: flex; justify-content: space-between; gap: 16px; }
+  .faq summary::-webkit-details-marker { display: none; }
+  .faq summary::after { content: "+"; color: var(--amber); font-weight: 800; }
+  .faq details[open] summary::after { content: "–"; }
+  .faq details p { margin-top: 12px; font-size: 16px; line-height: 1.65; color: var(--muted); }
+
+  .cta { position: relative; text-align: center; padding: clamp(90px, 12vw, 170px) 24px; margin-top: clamp(90px, 11vw, 150px); background: radial-gradient(ellipse at 50% 110%, rgba(232,163,61,0.45), rgba(178,74,20,0.15) 35%, rgba(10,10,11,0) 65%); }
+  .cta h2 { font-weight: 800; font-size: clamp(64px, 13vw, 210px); line-height: 0.86; letter-spacing: -0.045em; }
+  .qr-card { display: flex; justify-content: center; align-items: center; gap: 24px; margin: 40px auto 0; padding: 18px 26px 18px 18px; max-width: 520px; border-radius: 24px; background: rgba(10,10,11,0.6); border: 1px solid rgba(255,255,255,0.12); text-align: left; }
+  .qr-img { width: 120px; height: 120px; padding: 8px; background: var(--cream); border-radius: 14px; flex: none; }
+  .qr-card p { font-weight: 600; font-size: 16px; line-height: 1.5; }
+
+  footer { border-top: 1px solid var(--line); }
+  .foot { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 16px; padding-top: 28px; padding-bottom: 28px; font-size: 13px; color: var(--faint); }
+  .foot nav { display: flex; gap: 24px; flex-wrap: wrap; }
+  .foot nav a { text-decoration: none; color: rgba(242,238,230,0.66); }
+  .foot nav a:hover { color: var(--amber); }
+
+  /* QR dialog (desktop only) */
+  .qr-dialog { border: 1px solid rgba(255,255,255,0.12); border-radius: 28px; padding: 0; background: var(--card); color: var(--cream); text-align: center; max-width: 380px; width: calc(100% - 48px); }
+  .qr-inner { position: relative; padding: 36px; }
+  .qr-dialog::backdrop { background: rgba(0,0,0,0.7); backdrop-filter: blur(6px); }
+  .qr-dialog .qr-img { width: 220px; height: 220px; padding: 14px; border-radius: 20px; margin: 20px auto 18px; display: block; }
+  .qr-dialog h2 { font-weight: 800; font-size: 28px; letter-spacing: -0.02em; }
+  .qr-dialog p { font-size: 15px; line-height: 1.55; color: var(--muted); }
+  .qr-close { position: absolute; top: 14px; right: 14px; width: 44px; height: 44px; border-radius: 50%; border: 0; background: rgba(255,255,255,0.06); color: var(--cream); cursor: pointer; display: flex; align-items: center; justify-content: center; }
+  .qr-close:hover { background: rgba(255,255,255,0.12); }
+
+  .desktop-only { display: inline-flex; }
+  .qr-card.desktop-only { display: flex; }
+  @media (max-width: 820px), (pointer: coarse) {
+    .desktop-only, .qr-card.desktop-only { display: none !important; }
   }
-
-  /* NAV */
-  nav {
-    position: fixed; top: 0; left: 0; right: 0; z-index: 100;
-    display: flex; align-items: center; justify-content: space-between;
-    padding: 1.5rem 3rem;
-    border-bottom: 1px solid var(--border);
-    background: rgba(8,8,8,0.85);
-    backdrop-filter: blur(12px);
-  }
-
-  .nav-logo {
-    display: flex; align-items: center; gap: 0.75rem;
-    text-decoration: none; color: var(--white);
-  }
-
-  .nav-logo img {
-    width: 28px; height: 28px; border-radius: 6px;
-  }
-
-  .nav-logo span {
-    font-family: 'Cormorant Garamond', serif;
-    font-size: 1.3rem; font-weight: 400;
-    letter-spacing: 0.08em;
-  }
-
-  .nav-links { display: flex; gap: 2rem; list-style: none; }
-  .nav-links a {
-    text-decoration: none; color: var(--muted);
-    font-size: 0.8rem; letter-spacing: 0.1em; text-transform: uppercase;
-    transition: color 0.2s;
-  }
-  .nav-links a:hover { color: var(--white); }
-
-  /* HERO */
-  .hero {
-    min-height: 100vh;
-    display: flex; flex-direction: column;
-    align-items: center; justify-content: center;
-    text-align: center;
-    padding: 8rem 2rem 4rem;
-    position: relative; overflow: hidden;
-  }
-
-  .hero::before {
-    content: '';
-    position: absolute; top: 50%; left: 50%;
-    transform: translate(-50%, -50%);
-    width: 520px; height: 520px;
-    border-radius: 50%;
-    border: 1px solid rgba(255,255,255,0.04);
-    pointer-events: none;
-  }
-
-  .hero::after {
-    content: '';
-    position: absolute; top: 50%; left: 50%;
-    transform: translate(-50%, -50%);
-    width: 760px; height: 760px;
-    border-radius: 50%;
-    border: 1px solid rgba(255,255,255,0.025);
-    pointer-events: none;
-  }
-
-  .hero-logo {
-    width: 88px; height: 88px;
-    border-radius: 22px;
-    margin-bottom: 2.5rem;
-    opacity: 0;
-    animation: fadeUp 0.9s ease forwards 0.2s;
-  }
-
-  .hero-title {
-    font-family: 'Cormorant Garamond', serif;
-    font-size: clamp(3.5rem, 8vw, 6.5rem);
-    font-weight: 300;
-    letter-spacing: 0.12em;
-    line-height: 1;
-    color: var(--white);
-    opacity: 0;
-    animation: fadeUp 0.9s ease forwards 0.4s;
-  }
-
-  .hero-tagline {
-    margin-top: 1.25rem;
-    font-size: 0.8rem;
-    letter-spacing: 0.25em;
-    text-transform: uppercase;
-    color: var(--muted);
-    opacity: 0;
-    animation: fadeUp 0.9s ease forwards 0.55s;
-  }
-
-  .hero-desc {
-    max-width: 480px;
-    margin: 2.5rem auto 0;
-    font-size: 1rem;
-    line-height: 1.8;
-    color: rgba(255,255,255,0.55);
-    opacity: 0;
-    animation: fadeUp 0.9s ease forwards 0.7s;
-  }
-
-  .hero-cta {
-    margin-top: 3rem;
-    opacity: 0;
-    animation: fadeUp 0.9s ease forwards 0.85s;
-    display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;
-  }
-
-  .btn-primary {
-    display: inline-flex; align-items: center; gap: 0.5rem;
-    padding: 0.85rem 2rem;
-    background: var(--white);
-    color: var(--black);
-    text-decoration: none;
-    font-size: 0.8rem; letter-spacing: 0.1em; text-transform: uppercase;
-    border-radius: 2px;
-    transition: opacity 0.2s;
-  }
-  .btn-primary:hover { opacity: 0.85; }
-
-  .btn-secondary {
-    display: inline-flex; align-items: center; gap: 0.5rem;
-    padding: 0.85rem 2rem;
-    border: 1px solid var(--border);
-    color: var(--muted);
-    text-decoration: none;
-    font-size: 0.8rem; letter-spacing: 0.1em; text-transform: uppercase;
-    border-radius: 2px;
-    transition: color 0.2s, border-color 0.2s;
-  }
-  .btn-secondary:hover { color: var(--white); border-color: rgba(255,255,255,0.25); }
-
-  /* FEATURES */
-  .features {
-    padding: 7rem 2rem;
-    max-width: 960px; margin: 0 auto;
-  }
-
-  .section-label {
-    font-size: 0.7rem; letter-spacing: 0.3em;
-    text-transform: uppercase; color: var(--muted);
-    margin-bottom: 3.5rem; text-align: center;
-    font-weight: 300;
-  }
-
-  .features-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-    gap: 1px;
-    background: var(--border);
-    border: 1px solid var(--border);
-  }
-
-  .feature-item {
-    padding: 2.5rem;
-    background: var(--black);
-    position: relative;
-  }
-
-  .feature-number {
-    font-family: 'Cormorant Garamond', serif;
-    font-size: 2.5rem; font-weight: 300;
-    color: rgba(255,255,255,0.1);
-    line-height: 1;
-    margin-bottom: 1.25rem;
-  }
-
-  .feature-title {
-    font-size: 0.95rem; font-weight: 400;
-    color: var(--silver);
-    margin-bottom: 0.75rem;
-    letter-spacing: 0.02em;
-  }
-
-  .feature-desc {
-    font-size: 0.85rem;
-    color: var(--muted);
-    line-height: 1.75;
-  }
-
-  /* DIVIDER */
-  .divider {
-    max-width: 960px; margin: 0 auto;
-    border: none; border-top: 1px solid var(--border);
-  }
-
-  /* FOOTER */
-  footer {
-    padding: 2.5rem 3rem;
-    border-top: 1px solid var(--border);
-    display: flex; align-items: center; justify-content: space-between;
-    flex-wrap: wrap; gap: 1rem;
-  }
-
-  footer .footer-brand {
-    font-family: 'Cormorant Garamond', serif;
-    font-size: 1rem; letter-spacing: 0.1em;
-    color: var(--muted);
-  }
-
-  footer nav { position: static; background: none; border: none; backdrop-filter: none; padding: 0; }
-
-  .footer-links { display: flex; gap: 2rem; list-style: none; }
-  .footer-links a {
-    text-decoration: none; color: var(--muted);
-    font-size: 0.75rem; letter-spacing: 0.1em; text-transform: uppercase;
-    transition: color 0.2s;
-  }
-  .footer-links a:hover { color: var(--white); }
-
-  .footer-copy {
-    font-size: 0.72rem; color: rgba(255,255,255,0.2);
-    letter-spacing: 0.05em;
-  }
-
-  /* FAQ */
-  .faq { padding: 0 2rem 7rem; max-width: 720px; margin: 0 auto; }
-  .faq-item { border-top: 1px solid var(--border); padding: 1.75rem 0; }
-  .faq-item:last-child { border-bottom: 1px solid var(--border); }
-  .faq-q {
-    font-size: 0.95rem; font-weight: 400;
-    color: var(--silver); margin-bottom: 0.75rem;
-    letter-spacing: 0.01em;
-  }
-  .faq-a { font-size: 0.85rem; line-height: 1.8; color: var(--muted); }
-
-  @keyframes fadeUp {
-    from { opacity: 0; transform: translateY(18px); }
-    to   { opacity: 1; transform: translateY(0); }
-  }
-
-  @media (max-width: 640px) {
-    nav { padding: 1.25rem 1.5rem; }
-    .nav-links { display: none; }
-    footer { padding: 2rem 1.5rem; flex-direction: column; align-items: flex-start; }
-    .features-grid { grid-template-columns: 1fr; }
+  @media (max-width: 700px) {
+    .step { border-right: 0; border-bottom: 1px solid var(--line); }
+    .hero-stat.left, .hero-stat.right { text-align: center; align-items: center; max-width: none; }
+    .hero-stat.left { order: 3; }
   }
 </style>
 </head>
 <body>
 
-<nav>
-  <a href="/" class="nav-logo">
-    <img src="new_logo.png" alt="Kronus logo">
-    <span>Kronus</span>
-  </a>
-  <ul class="nav-links">
-    <li><a href="#faq">FAQ</a></li>
-    <li><a href="/support">Support</a></li>
-    <li><a href="/privacy">Privacy</a></li>
-    <li><a href="/terms">Terms</a></li>
-  </ul>
-</nav>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="apple" viewBox="0 0 24 24"><path fill="currentColor" d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.81-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/></symbol>
+  <symbol id="qr" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/><path d="M14 14h3v3h-3zM20 14v.01M14 20h.01M17 20h4v-3"/></g></symbol>
+</svg>
+
+<header class="wrap nav">
+  <a href="/" class="logo"><img src="new_logo.png" alt="">KRONUS</a>
+  <a href="https://apps.apple.com/app/apple-store/id6760615998?pt=128353504&amp;ct=web_nav&amp;mt=8" class="nav-cta">Get the app</a>
+</header>
 
 <main>
-<section class="hero">
-  <img src="new_logo.png" alt="Kronus app icon" class="hero-logo">
-  <h1 class="hero-title">KRONUS</h1>
-  <p class="hero-tagline">The discipline &amp; habit tracker for iPhone</p>
-  <p class="hero-desc">Stop guessing whether you're getting better. Kronus turns your goals into daily habits and shows you, day by day, whether you're actually doing them. No fluff. No motivation hacks. Just execution.</p>
-  <div class="hero-cta">
-    <!-- ct=website tags installs from this site in App Store Connect > App Analytics. -->
-    <a href="https://apps.apple.com/app/apple-store/id6760615998?pt=128353504&amp;ct=website&amp;mt=8" class="btn-primary">
-      <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M7 1v8M3.5 5.5L7 9l3.5-3.5M2 11h10" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+  <!-- HERO -->
+  <section class="hero" id="top">
+    <p class="kicker">HOW ARE YOU SO LOCKED IN?</p>
+    <h1>LOCK IN.</h1>
+    <p class="lead">The discipline tracker for people who are done starting over. Habits, XP, ranks and streaks. No fluff. Just execution.</p>
+    <div class="hero-ctas">
+      <a href="https://apps.apple.com/app/apple-store/id6760615998?pt=128353504&amp;ct=web_hero&amp;mt=8" class="btn btn-primary">
+        <svg width="20" height="20" aria-hidden="true"><use href="#apple"/></svg>
+        Download free
+      </a>
+      <button type="button" class="btn btn-ghost desktop-only" data-open-qr aria-haspopup="dialog">
+        <svg width="20" height="20" aria-hidden="true"><use href="#qr"/></svg>
+        QR code
+      </button>
+    </div>
+
+    <div class="hero-stage">
+      <div class="hero-glow" aria-hidden="true"></div>
+      <div class="hero-stat left">
+        <p class="big amber">+50 XP</p>
+        <p>bonus for finishing your whole day</p>
+      </div>
+      <img class="hero-phone" src="images/phone-progress.webp" width="760" height="1203" alt="Kronus Progress screen: Gold V rank badge, level 25, 1075 of 4500 XP and an XP-per-day chart">
+      <div class="hero-stat right">
+        <img src="images/flame.webp" width="51" height="72" alt="" style="object-fit: contain">
+        <p class="big">Streaks</p>
+        <p>miss a day, lose the flame</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- TICKER -->
+  <div class="ticker" aria-hidden="true">
+    <p>NO FLUFF ✦ NO MOTIVATION HACKS ✦ JUST EXECUTION ✦ NO FLUFF ✦ NO MOTIVATION HACKS ✦ JUST EXECUTION ✦&nbsp;NO FLUFF ✦ NO MOTIVATION HACKS ✦ JUST EXECUTION ✦ NO FLUFF ✦ NO MOTIVATION HACKS ✦ JUST EXECUTION ✦&nbsp;</p>
+  </div>
+
+  <!-- PROBLEM -->
+  <section class="wrap section">
+    <p class="kicker" style="font-size: 14px; letter-spacing: 0.3em; margin-bottom: 18px">WHY YOU KEEP STARTING OVER</p>
+    <h2 class="display section-h">MOTIVATION FADES.<br><span class="amber">SYSTEMS DON'T.</span></h2>
+    <p class="lead" style="margin: 24px 0 48px; max-width: 620px">New Monday, new plan, gone by Thursday. Not because you're lazy: motivation is a feeling, and feelings don't show up every day. Kronus gives you a system instead.</p>
+    <div class="grid pains">
+      <div class="pain">
+        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#e8a33d" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><path d="M18 6 6 18M6 6l12 12"/></svg>
+        <h3>Every Monday is a fresh start.</h3>
+        <p>And every Thursday the plan is gone. Again.</p>
+      </div>
+      <div class="pain">
+        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#e8a33d" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><path d="M18 6 6 18M6 6l12 12"/></svg>
+        <h3>No idea if you're improving.</h3>
+        <p>It feels like progress. Nothing is measuring it.</p>
+      </div>
+      <div class="pain">
+        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#e8a33d" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><path d="M18 6 6 18M6 6l12 12"/></svg>
+        <h3>Hype runs out.</h3>
+        <p>Motivation videos work for a day. Discipline has to work every day.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- PICK YOUR WAR -->
+  <section class="wrap section" id="who">
+    <h2 class="display section-h">PICK YOUR<br><span class="amber">WAR.</span></h2>
+    <p class="lead" style="margin: 20px 0 48px; max-width: 520px">Kronus builds your plan around what you're actually fighting.</p>
+    <div class="grid wars">
+      <article class="card war"><span class="num">01</span><div><h3>Money &amp; career</h3><p>Deep work, side projects, saving. Show up for the work that compounds.</p></div></article>
+      <article class="card war"><span class="num">02</span><div><h3>Women &amp; dating</h3><p>Confidence is built, not found. Gym, style, getting out of the house.</p></div></article>
+      <article class="card war"><span class="num">03</span><div><h3>Quit the addiction</h3><p>Porn, phone, vaping, games. Count the days you stayed clean.</p></div></article>
+      <article class="card war"><span class="num">04</span><div><h3>Body &amp; gym</h3><p>Train, sleep, eat right. Every rep logged, every day counted.</p></div></article>
+    </div>
+  </section>
+
+  <!-- 3 STEPS -->
+  <section class="steps">
+    <div class="steps-grid" style="max-width: 1280px; margin: 0 auto">
+      <div class="step"><span class="num" aria-hidden="true">1</span><h3>Pick your habits</h3><p>From a ready-made library or your own. Schedule them your way.</p></div>
+      <div class="step"><span class="num" aria-hidden="true">2</span><h3>Check them off</h3><p>Every day. Reminders when it matters, timers when it takes focus.</p></div>
+      <div class="step"><span class="num" aria-hidden="true">3</span><h3>Level up</h3><p>XP for every habit, a bonus for a complete day, ranks from Wood to Sapphire.</p></div>
+    </div>
+  </section>
+
+  <!-- FEATURE SHOWCASE -->
+  <section class="wrap section showcase" id="features">
+    <div class="feature">
+      <div class="feature-copy">
+        <span class="kicker">EXECUTE</span>
+        <h3>CHECK IT OFF. EVERY DAY.</h3>
+        <p class="lead">Habits from a ready-made library or your own, scheduled your way: weekdays, times per week or month, every few days. Reminders when it matters, timers when it takes focus.</p>
+      </div>
+      <div class="feature-media"><div class="screen"><img src="images/screen-habits.webp" width="720" height="1091" loading="lazy" alt="Kronus Habits screen: 7 of 10 habits done today, grouped into Physical and Mental, with +70 XP earned"></div></div>
+    </div>
+    <div class="feature reverse">
+      <div class="feature-copy">
+        <span class="kicker">LEVEL UP</span>
+        <h3>EARN EVERY RANK.</h3>
+        <p class="lead">XP for every habit, +50 XP for a complete day, 28 levels from Wood to Sapphire.</p>
+      </div>
+      <div class="feature-media"><img src="images/phone-progress.webp" width="760" height="1203" loading="lazy" style="position: relative; width: min(100%, 340px); height: auto" alt="Kronus Progress screen: Gold V rank badge, level 25, 1075 of 4500 XP and an XP-per-day chart"></div>
+    </div>
+    <div class="feature">
+      <div class="feature-copy">
+        <span class="kicker">STATS</span>
+        <h3>THE NUMBERS DON'T LIE.</h3>
+        <p class="lead">Week, month and year. Consistency by category and by habit. See if you're actually doing it.</p>
+      </div>
+      <div class="feature-media"><div class="screen"><img src="images/screen-stats.webp" width="720" height="1009" loading="lazy" alt="Kronus Stats screen: yearly heatmap, progress chart and consistency by category"></div></div>
+    </div>
+    <div class="feature reverse">
+      <div class="feature-copy">
+        <span class="kicker">COMMUNITY</span>
+        <h3>NOT ALONE.</h3>
+        <p class="lead">Wins, setbacks and what's working, from people on the same path.</p>
+      </div>
+      <div class="feature-media"><div class="screen"><img src="images/screen-community.webp" width="720" height="1056" loading="lazy" alt="Kronus Community screen with posts and replies from members and their rank badges"></div></div>
+    </div>
+  </section>
+
+  <!-- MISS A DAY -->
+  <section class="wrap section">
+    <div class="card miss">
+      <div class="miss-copy">
+        <img src="images/flame.webp" width="57" height="80" alt="" loading="lazy" style="object-fit: contain">
+        <h2 class="display">MISSED A DAY?<br><span class="amber">NOT BACK TO ZERO.</span></h2>
+      </div>
+      <div class="grid miss-list">
+        <div><h3>Best streak stays on record.</h3><p>Miss a day, a new streak starts. Your best one is saved.</p></div>
+        <div><h3>XP and rank stay yours.</h3><p>Nothing you earned is taken away.</p></div>
+        <div><h3>Rest days don't count.</h3><p>Days with nothing scheduled never break a streak.</p></div>
+        <div><h3>Vacation mode.</h3><p>Pause for a trip or a sick week, streak safe.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- REVIEWS -->
+  <section class="wrap section" id="reviews">
+    <div class="reviews-head">
+      <h2 class="display section-h" style="font-size: clamp(38px, 6vw, 88px)">IN THEIR<br>WORDS.</h2>
+      <a href="https://apps.apple.com/app/apple-store/id6760615998?pt=128353504&amp;ct=web_reviews&amp;mt=8&amp;see-all=reviews">Read every review on the App Store →</a>
+    </div>
+    <div class="grid reviews">
+      <figure class="card review"><div><p class="stars" aria-label="5 out of 5 stars">★★★★★</p><blockquote>“This app genuinely changed my life! It makes it so easy to see my progress that I'm proud of, and it makes discipline kind of fun.”</blockquote></div><figcaption>Heiohsidr · App Store, Canada</figcaption></figure>
+      <figure class="card review"><div><p class="stars" aria-label="5 out of 5 stars">★★★★★</p><blockquote>“I have been tracking this using Excel all my life until I found this game changer. Tracking discipline was never so convenient.”</blockquote></div><figcaption>henriquevicentemota · App Store, Portugal</figcaption></figure>
+      <figure class="card review"><div><p class="stars" aria-label="5 out of 5 stars">★★★★★</p><blockquote>“I like that this doesn't try to hype you up. […] More awareness and execution, less cheerleading.”</blockquote></div><figcaption>iamjennym · App Store, US</figcaption></figure>
+      <figure class="card review"><div><p class="stars" aria-label="5 out of 5 stars">★★★★★</p><blockquote>“This discipline tracker app is simple, motivating, and really effective. The clean design makes it easy to stay consistent and focused on daily goals.”</blockquote></div><figcaption>Maria Carvas · App Store, Portugal</figcaption></figure>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="wrap section faq" id="faq">
+    <h2 class="display section-h" style="font-size: clamp(38px, 6vw, 88px); margin-bottom: 32px">STRAIGHT<br><span class="amber">ANSWERS.</span></h2>
+    <details><summary>What is Kronus?</summary><p>A discipline and habit tracker for iPhone. Turn your goals into daily habits, check them off, earn XP, climb ranks and see clear weekly, monthly and yearly stats.</p></details>
+    <details><summary>How is it different from other habit trackers?</summary><p>It's built around discipline, not motivation: XP for every habit, a bonus for a complete day, 28 ranks, streaks, vacation mode and a community.</p></details>
+    <details><summary>Is Kronus free?</summary><p>Free to download. Kronus Premium is an optional subscription; prices and any trial are shown in the app before you pay.</p></details>
+    <details><summary>What happens if I miss a day?</summary><p>Your current streak starts again, but your best streak stays on record and every XP and rank you earned stays yours. Days with nothing scheduled never break a streak.</p></details>
+    <details><summary>Can I take a break without losing my streak?</summary><p>Yes. Vacation mode pauses your habits for the dates you choose, so a trip or a sick week doesn't cost you the streak.</p></details>
+    <details><summary>Is my data private?</summary><p>Your habits sync to your account so you can restore them on a new phone. We don't sell your data, and you can delete your account and everything in it from Settings at any time. More in our <a href="/privacy">Privacy Policy</a>.</p></details>
+    <details><summary>Can I cancel anytime?</summary><p>Yes. iPhone Settings › your name › Subscriptions › Kronus › Cancel Subscription. Cancel at least 24 hours before the period ends to avoid a renewal.</p></details>
+    <details><summary>Is Kronus on Android?</summary><p>Kronus is currently available for iPhone on the App Store.</p></details>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta" id="download">
+    <h2>YOUR<br>MOVE.</h2>
+    <div class="qr-card desktop-only">
+      <img class="qr-img" src="images/qr-app-store.svg" width="120" height="120" alt="QR code that opens Kronus on the App Store">
+      <p>On your laptop? Scan with your iPhone camera. Kronus opens straight on the App Store.</p>
+    </div>
+    <a href="https://apps.apple.com/app/apple-store/id6760615998?pt=128353504&amp;ct=web_cta&amp;mt=8" class="btn btn-primary" style="margin-top: 32px; min-height: 60px; padding: 0 32px; font-size: 17px; border-radius: 18px">
+      <svg width="20" height="20" aria-hidden="true"><use href="#apple"/></svg>
       Download on the App Store
     </a>
-    <a href="#faq" class="btn-secondary">How it works</a>
-  </div>
-</section>
-
-<section class="features">
-  <h2 class="section-label">What Kronus does for you</h2>
-  <div class="features-grid">
-    <div class="feature-item">
-      <div class="feature-number">01</div>
-      <h3 class="feature-title">Build your system</h3>
-      <p class="feature-desc">Pick habits from a ready-made library or create your own. Schedule them your way: specific weekdays, days of the month, a number of times per week or month, or every few days.</p>
-    </div>
-    <div class="feature-item">
-      <div class="feature-number">02</div>
-      <h3 class="feature-title">Execute every day</h3>
-      <p class="feature-desc">Check off each habit as you do it. Set reminders at the times that matter, and run timers for the habits that take focus.</p>
-    </div>
-    <div class="feature-item">
-      <div class="feature-number">03</div>
-      <h3 class="feature-title">Level up</h3>
-      <p class="feature-desc">Every completed habit earns XP. Complete your whole day for a bonus, climb through the ranks and keep your streaks alive. Vacation mode lets you take a planned break without breaking your streak.</p>
-    </div>
-    <div class="feature-item">
-      <div class="feature-number">04</div>
-      <h3 class="feature-title">See what actually matters</h3>
-      <p class="feature-desc">Clear stats for every week, month and year. See your consistency, find the patterns and spot what's holding you back.</p>
-    </div>
-    <div class="feature-item">
-      <div class="feature-number">05</div>
-      <h3 class="feature-title">You're not doing it alone</h3>
-      <p class="feature-desc">Join the Kronus community. Share your wins, your setbacks and what's working, and stay accountable.</p>
-    </div>
-    <div class="feature-item">
-      <div class="feature-number">06</div>
-      <h3 class="feature-title">Built for discipline</h3>
-      <p class="feature-desc">For builders, athletes, students, entrepreneurs, and anyone tired of starting over who wants a clear system for daily execution.</p>
-    </div>
-  </div>
-</section>
-
-<section class="faq" id="faq">
-  <h2 class="section-label">Frequently asked questions</h2>
-  <div class="faq-item">
-    <h3 class="faq-q">What is Kronus?</h3>
-    <p class="faq-a">Kronus is a discipline and habit tracker for iPhone. You turn your goals into daily habits, check them off every day, earn XP, climb ranks and keep streaks, and see clear weekly, monthly and yearly stats on whether you are actually doing them.</p>
-  </div>
-  <div class="faq-item">
-    <h3 class="faq-q">How is Kronus different from other habit trackers?</h3>
-    <p class="faq-a">Kronus is built around discipline rather than motivation. Every completed habit earns XP, completing your whole day earns a bonus, and you climb through ranks. Vacation mode lets you take a planned break without breaking your streak, and the Kronus community lets you share wins and setbacks.</p>
-  </div>
-  <div class="faq-item">
-    <h3 class="faq-q">Who is Kronus for?</h3>
-    <p class="faq-a">People who want discipline, not motivation: builders, athletes, students, entrepreneurs, and anyone tired of starting over who wants a clear system for daily execution. Common goals include the gym, money and career, quitting bad habits and building confidence.</p>
-  </div>
-  <div class="faq-item">
-    <h3 class="faq-q">Is Kronus free?</h3>
-    <p class="faq-a">Kronus is free to download on the App Store. Kronus Premium is an optional auto-renewing subscription. Prices in your currency, and any free trial terms, are shown in the app before you pay. You can cancel any time in your Apple account settings.</p>
-  </div>
-  <div class="faq-item">
-    <h3 class="faq-q">Is Kronus available on Android?</h3>
-    <p class="faq-a">Kronus is currently available for iPhone on the App Store.</p>
-  </div>
-  <div class="faq-item">
-    <h3 class="faq-q">How do I cancel my Kronus subscription?</h3>
-    <p class="faq-a">Open the Settings app on your iPhone, tap your name, then Subscriptions, choose Kronus and tap Cancel Subscription. Cancel at least 24 hours before the end of the current period to avoid a renewal.</p>
-  </div>
-</section>
+  </section>
 </main>
 
 <footer>
-  <span class="footer-brand">Kronus</span>
-  <ul class="footer-links">
-    <li><a href="/privacy">Privacy Policy</a></li>
-    <li><a href="/terms">Terms of Service</a></li>
-    <li><a href="/support">Support</a></li>
-  </ul>
-  <span class="footer-copy">&copy; 2026 Kronus. All rights reserved.</span>
+  <div class="wrap foot">
+    <span style="font-weight: 800; color: var(--cream); letter-spacing: 0.06em">KRONUS</span>
+    <nav aria-label="Footer">
+      <a href="#faq">FAQ</a>
+      <a href="/support">Support</a>
+      <a href="/privacy">Privacy</a>
+      <a href="/terms">Terms</a>
+    </nav>
+    <span>© 2026 Kronus</span>
+  </div>
 </footer>
 
+<!-- QR pop-up (desktop only; the button that opens it is hidden on phones) -->
+<dialog class="qr-dialog" id="qr-dialog" aria-labelledby="qr-title">
+  <div class="qr-inner">
+  <button type="button" class="qr-close" data-close-qr aria-label="Close">
+    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" aria-hidden="true"><path d="M18 6 6 18M6 6l12 12"/></svg>
+  </button>
+  <h2 id="qr-title">Scan to lock in</h2>
+  <img class="qr-img" src="images/qr-app-store.svg" width="220" height="220" alt="QR code that opens Kronus on the App Store">
+  <p>Point your iPhone camera at the code. Kronus opens straight on the App Store.</p>
+  </div>
+</dialog>
+
+<script>
+  (function () {
+    var dialog = document.getElementById('qr-dialog');
+    document.querySelectorAll('[data-open-qr]').forEach(function (btn) {
+      btn.addEventListener('click', function () { dialog.showModal(); });
+    });
+    dialog.querySelector('[data-close-qr]').addEventListener('click', function () { dialog.close(); });
+    // Clicking the backdrop (outside the card) closes it too.
+    dialog.addEventListener('click', function (e) { if (e.target === dialog) dialog.close(); });
+  })();
+</script>
 <script>window.va = window.va || function () { (window.vaq = window.vaq || []).push(arguments); };</script>
 <script defer src="/_vercel/insights/script.js"></script>
 </body>
