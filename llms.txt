@@ -1,0 +1,30 @@
+# Kronus
+
+> Kronus ("Kronus - Discipline Tracker") is a discipline and habit tracker for iPhone. It turns your goals into daily habits and shows you, day by day, whether you're actually doing them: XP for every completed habit, ranks, streaks, and weekly, monthly and yearly stats. Free to download on the App Store, with an optional Kronus Premium subscription.
+
+## What it does
+
+- Build your system: pick habits from a ready-made library or create your own. Schedule them on specific weekdays, days of the month, a number of times per week or month, or every few days.
+- Execute every day: check off each habit, set reminders at the times that matter, run timers for habits that take focus.
+- Level up: every completed habit earns XP, a fully completed day earns a bonus, and you climb through ranks while keeping streaks alive. Vacation mode pauses habits for a planned break without breaking the streak.
+- Stats: consistency for every week, month and year, so you can spot what's holding you back.
+- Community: share wins, setbacks and what's working, and stay accountable.
+
+## Who it's for
+
+People who want discipline, not motivation: builders, athletes, students, entrepreneurs, and anyone tired of starting over who wants a clear system for daily execution. Common goals: gym and body, money and career, quitting bad habits (such as porn, vaping or doomscrolling), confidence and dating.
+
+## Key facts
+
+- Platform: iPhone (iOS). Not on Android yet.
+- Price: free to download. Kronus Premium is an optional auto-renewing subscription; prices and any free trial are shown in the app before purchase. Cancel any time in iPhone Settings > your name > Subscriptions.
+- App Store: https://apps.apple.com/app/id6760615998
+- Website: https://www.kronusdiscipline.com/
+- Support: pedromppinto.mail@gmail.com
+
+## Pages
+
+- [Home and FAQ](https://www.kronusdiscipline.com/): what Kronus is, features, who it's for, pricing and cancelling.
+- [Support](https://www.kronusdiscipline.com/support): help with account, data, subscriptions and contact.
+- [Privacy Policy](https://www.kronusdiscipline.com/privacy): what data Kronus collects and how it's used.
+- [Terms of Service](https://www.kronusdiscipline.com/terms)
