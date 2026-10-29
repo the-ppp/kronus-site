@@ -10,5 +10,18 @@
         }
       ]
     }
+  ],
+  "redirects": [
+    {
+      "source": "/((?!\\.well-known/|auth/).*)",
+      "has": [
+        {
+          "type": "host",
+          "value": "www.kronustime.com"
+        }
+      ],
+      "destination": "https://www.kronusdiscipline.com/$1",
+      "permanent": true
+    }
   ]
 }
